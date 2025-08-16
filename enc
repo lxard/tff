@@ -1,0 +1,24 @@
+#!/usr/bin/sh
+
+
+echo -e "\n\n\t\x1b[46m\x1b[1m\x20\x20START ENCRYPTING FILES\x20\x20\x1b[0m\n\n"
+
+pkg update -y && pkg install -y zip rsync
+
+rm -rf data/auth data/store.json
+
+mkdir -p encrypting && rsync -av --exclude=node_modules --exclude=encrypting --exclude=encrypted --exclude=encrypted.zip ./* ./encrypting/
+
+npm i javascript-obfuscator
+
+node lib/obfuscator.js
+
+npm un javascript-obfuscator 
+
+mv encrypting encrypted 
+
+zip -r encrypted.zip encrypted 
+
+rm -rf encrypted node_modules
+
+echo -e "\n\n\t\x1b[44m\x1b[1m\x20\x20FINISHED ENCRYPTING FILES\x20\x20\x1b[0m\n\n\t\x1b[1m\x20\x20\x20CHECK FILES ENCRYPTED.ZIP\x1b[0m\n\n"

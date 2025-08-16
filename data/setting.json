@@ -1,0 +1,14 @@
+{
+  "name": "Lx",
+  "number": "",
+  "features": {
+    "broadcast": { "status": true, "blacklist": ["6283895079009"], "text": "" },
+    "pushContacts": {
+      "status": true,
+      "blacklist": ["62882003582453"],
+      "text": ""
+    },
+    "antiCall": { "status": true },
+    "safeMode": { "status": false }
+  }
+}

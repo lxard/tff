@@ -1,0 +1,16 @@
+[
+  {
+    "nama": "test",
+    "harga": 10000,
+    "jumlah": 1,
+    "image": "https://i.postimg.cc/tgg15ZkD/image.jpg",
+    "kategori": "medsos"
+  },
+  {
+    "nama": "test",
+    "harga": 10000,
+    "jumlah": 1,
+    "image": "https://i.postimg.cc/tgg15ZkD/image.jpg",
+    "kategori": "medsos"
+  }
+]

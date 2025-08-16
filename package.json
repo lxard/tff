@@ -1,0 +1,27 @@
+{
+  "name": "Lx",
+  "version": "4.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index --number"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "@xct007/tiktok-scraper": "^1.0.2",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "link-preview-js": "^3.0.5",
+    "node-cache": "^5.1.2",
+    "node-webpmux": "^3.2.0",
+    "pino": "^9.7.0",
+    "qrcode-terminal": "^0.12.0",
+    "softie-api": "^1.1.0",
+    "unzipper": "^0.12.3",
+    "wa-sticker-formatter": "^4.4.4"
+  }
+}
